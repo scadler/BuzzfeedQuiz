@@ -72,16 +72,16 @@ function Results(){
            $("#resultHTML").html("Please double check that you filled out the test correctly");
         }
         else if(score <= -2){
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a job at Google!");
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy summer the most!");
         }
         else if(score >= 2){
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a job at Amazon!");
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a winter the most!");
         }
         else if(score === 4 || score === -4){
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a job at Apple!");
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a fall the most!");
         }
         else{
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a job at Microsoft!");
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a spring the most!");
         }
         
 };
