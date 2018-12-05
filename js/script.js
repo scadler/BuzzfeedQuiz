@@ -71,17 +71,17 @@ function Results(){
         if(((q1Result !== "reading" && q1Result !== "sports" && q1Result !== "sleeping") || (q2Result !== "hot" && q2Result !== "cold" && q2Result !== "indifferent") || (q3Result !== "cat" && q3Result !== "dog" && q3Result !== "neither") || (q4Result !== "group" && q4Result !== "alone" && q4Result !== "either")) || (name === "")){
            $("#resultHTML").html("Please double check that you filled out the test correctly");
         }
-        else if(score <= -2){
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy summer the most!");
+        else if(score < -2){
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you are most like the season SUMMER!");
         }
-        else if(score >= 2){
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a winter the most!");
+        else if(score > 2){
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you are most like the season WINTER!");
         }
-        else if(score === 4 || score === -4){
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a fall the most!");
+        else if(score >= -2 && score < 0){
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you are most like the season SPRING!");
         }
         else{
-            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you would enjoy a spring the most!");
+            $("#resultHTML").html("Congratulations " + name + ", the results indicate that you are most like the season FALL!");
         }
         
 };
