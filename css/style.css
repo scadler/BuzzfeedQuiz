@@ -24,7 +24,6 @@ body {
 }
 
 #tomImg {
-    border-radius: 50%;
     width: 50px;
 }
 
@@ -41,13 +40,13 @@ a {
    text-align:center;
 }
 
-button {
+#buttonMain {
     margin-top: 10px;
     color: #595959;
     background-color: #ccffff;
     font-size: 40px;
     border-radius: 25px;
-    border:3px solid #E6E6E6 ;
+    border:3px solid #d3d3d3 ;
     font-family: monospace;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }

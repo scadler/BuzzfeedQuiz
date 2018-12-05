@@ -85,7 +85,7 @@ function Results(){
         }
         
 };
-$("button").click(function(){
+$("#buttonMain").click(function(){
     Results();
     
 });
